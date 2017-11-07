@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="script/jquery-1.3.2.js"></script>
+    <script src="script/jquery.validate.js"></script>
+    <script src="script/Software.js"></script>
+    <link href="style1.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="header" style="height:116px;width:1370px;">
+            <div id="logo">
+
+                <img src="../images/InfiniteworxLogo.png" style="height:101px ;width:178px" />
+            </div>
+
+
+            <div style="margin-top: -108px;    margin-left: 300px;">
+                <h1>
+                    <b>
+                        <font color="white">
+                            <center style="font-size:230%;">
+                                Assets Management System
+                            </center>
+                        </font>
+                    </b>
+                </h1>
+            </div>
+        </div>
+
+
+    </div>
+
+    <form id="forms" name="form1" onsubmit="return checkforblank()">
+
+
+        <div style="width:50%;float:left">
+            <h4 id="textName" style="margin-left:214px;margin-top:-140px">
+                Asset Code:
+                <input type="text" name='textfield1' id="assetCode" style=" margin-left:30px; "><br><br>
+
+                Asset Name:
+                <input type="text" name="textfield2" id="assetName" style=" margin-left:30px; "><br><br>
+
+                Short Name:
+                <input type="text" name="textfield3" id="shortName" style="margin-left:30px" ;><br><br>
+
+
+                Description:
+                <textarea rows="4" name="textfield4" cols="22" id="description" placeholder="Type text here" style=" margin-left:33px; border-radius:10px;"></textarea>
+                <br>
+                <br />
+
+                Created date:
+                <input type="date" name="textfield5" id="date" style=" margin-left:30px; width: 181px; height: 22px;"><br><br>
+
+                Serial No:
+                <input type="text" name="textfield6" id="serialNo" style=" margin-left:53px; width: 181px; height: 22px;" /><br><br>
+
+
+                Warranty Period:
+                <input type="text" name="textfield7" id="warranty" placeholder="in months.." style="margin-left:0px"><br><br>
+
+
+
+            </h4>
+        </div>
+        <div style="width:50%;float:right" ;style="margin-left:62px;">
+            <h4 id="textName" style="margin-left:100px;margin-top:-140px">
+
+                Software Version:
+                <input type="text" name="textfield8" id="softwareVersion" style="margin-left:21px"><br><br>
+
+                Software Type:
+                <input type="text" name="textfield9" id="softwareType" style="margin-left:44px"><br><br>
+
+                Lisence Class:
+                <input type="text" name="textfield10" id="lisenceClass" style="margin-left:44px"><br><br>
+
+                Lisence No:
+                <input type="text" name="textfield11" id="lisenceNo" style="margin-left:64px"><br><br>
+
+                Lisence Key:
+                <input type="text" name="textfield12" id="lisenceKey" style="margin-left:55px"><br><br>
+
+                Vendor Name:
+                <input type="text" name="textfield13" id="vendorName" style="margin-left:47px"><br><br>
+
+                Vendor Contact No:
+                <input type="text" name="textfield14" id="vendorContactNo" style=" margin-left:6px; WIDTH: 181px; height: 22px;"><br><br>
+
+                Vendor Email:
+                <input type="email" name="textfield15" id="vendorEmail" style=" margin-left:47px; WIDTH: 181px; height: 22px;"><br>
+        </div></h4>
+
+
+
+        <div style="margin-top:15%">
+            <!--<input type="submit" id="button" value="Save" style="margin-left:-98px;padding: 4px 12px;margin-top:60px">-->
+            <input type="submit" id="btnUpdate" value="Update" class="buttonStyle" style="margin-left:-98px;padding: 4px 12px;margin-top:60px">
+            <input type="button" id="btnBack" value="Back" class="buttonStyle" style="margin-left:34px;padding: 2px 10px;" onclick="location.href='Software.html'">
+            <input type="reset" id="btnReset" value="Reset" class="buttonStyle" style="margin-left:50px;padding: 4px 12px;">
+        </div>
+        </h4>
+    </form>
+
+    <br />
+    <div id="footer-wrapper">
+        <footer id="footer" style="height:70px;width:1370px;margin-top:30px;position:initial;"><p>@Copyright InfinteWorx Omnichannel Private Limited</p></footer>
+    </div>
+
+
+</body>
+</html>

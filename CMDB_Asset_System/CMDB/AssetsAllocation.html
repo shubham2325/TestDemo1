@@ -1,0 +1,124 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Infiniteworx</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+
+    
+ 
+    <script src="script/jquery-1.3.2.js"></script>
+    <script src="script/jquery.validate.js"></script>
+    <link href="style1.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="main">
+        <div id="header" style="height:116px;width:1370px;">
+            <div id="logo">
+
+                <img src="../images/InfiniteworxLogo.png" style="height:110px ;width:178px" />
+            </div>
+
+
+            <div style="margin-top: -108px;    margin-left: 169px;">
+                <h1>
+                    <b>
+                        <font color="white">
+                            <center style="font-size:230%;margin-top:40px;">
+                                Assets Management System
+                            </center>
+                        </font>
+                    </b>
+                </h1>
+            </div>
+        </div>
+
+
+    </div>
+
+    <h1 style="    margin-left: 500px;margin-top: 30px; font-size: 150%;"> Assets Allocation List</h1>
+
+    <h2>
+        <input type="button" id="btnAddNew" value="Add New" class="buttonStyle" style="background: #EFEFEF;margin-left: 30px;" onclick="location.href='AssigneeDetails.html'" />
+        <input type="button" id="btnBack" value="Back" class="buttonStyle" style="background: #EFEFEF;margin-left: 30px;"onclick="location.href='Index.html'" />
+
+
+        <label style="margin-left:730px"> Search :<input type="text" id="myInput" onkeyup="assigneeSearch()" placeholder="Search for emp cubical No names.." title="Type in a name"></label>
+
+
+
+
+    </h2>
+    <h4>
+        <div style="overflow:scroll;height:300px;width:100%;overflow:auto">
+            <table id="tblAsset" style="margin-left: 30px;">
+                <tr class="header">
+                    <th>Sr. No</th>
+                    <!--<th>Asset Type</th>-->
+                    <th>Emp Id</th>
+                    <th>Emp Name</th>
+                    <th>Emp Cubical No</th>
+
+                    <th>Contact_No</th>
+                    <th>Email_Id</th>
+                    <th>button</th>
+                    <th>button1</th>
+                    <th>button</th>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>abc</td>
+                    <td>A-1</td>
+                    <td>1234567890</td>
+                    <td>abc@gmail.com</td>
+
+
+                    <td><input type="button" id="btnAssign" value="Assign" class="buttonStyle" style="background: #EFEFEF;" onclick="location.href='AssignStandAlone.html'" /></td>
+                    <td><input type="button" id="btnView" value="View"  class="buttonStyle"  style="background: #EFEFEF;" onclick="location.href='View.html'" /></td>
+                    <td><input type="button" id="btnAssigneeUpdate" value="Assignee Update"  class="buttonStyle"  style="background: #EFEFEF;" onclick="location.href='AssigneeUpdate.html'" /></td>
+                    <td><input type="button" id="btnDelete" value="Delete"  class="buttonStyle"  style="background: #EFEFEF;" onclick="Popup()" /></td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>def</td>
+                    <td>A-2</td>
+                    <td>1234567890</td>
+                    <td>def@gmail.com</td>
+
+                    <td><input type="button" id="btnAssign" value="Assign"  class="buttonStyle" style="background: #EFEFEF;" onclick="location.href='AssignStandAlone.html'" /></td>
+                    <td><input type="button" id="btnView" value="View"  class="buttonStyle" style="background: #EFEFEF;" onclick="location.href='View.html'" /></td>
+                    <td><input type="button" id="btnAssigneeUpdate" value="Assignee Update"  class="buttonStyle" style="background: #EFEFEF;" onclick="location.href='AssigneeUpdate.html'" /></td>
+                    <td><input type="button" id="btnDelete" value="Delete"  class="buttonStyle"v style="background: #EFEFEF;" onclick="Popup()" /></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>mnp</td>
+                    <td>A-3</td>
+                    <td>1234567890</td>
+                    <td>mnp@gmail.com</td>
+
+                    <td><input type="button" id="btnAssign" value="Assign" class="buttonStyle" style="background: #EFEFEF;" onclick="location.href='AssignStandAlone.html'" /></td>
+                    <td><input type="button" id="btnView" value="View" class="buttonStyle" style="background: #EFEFEF;" onclick="location.href='View.html'" /></td>
+                    <td><input type="button" id="btnAssigneeUpdate" value="Assignee Update" class="buttonStyle" style="background: #EFEFEF;" onclick="location.href='AssigneeUpdate.html'" /></td>
+                    <td><input type="button" id="btnDelete" value="Delete" class="buttonStyle" style="background: #EFEFEF;" onclick="Popup()" /></td>
+                </tr>
+
+            </table>
+            </div>
+            <div id="footer-wrapper">
+                <footer id="footer" style="height:70px;width:1370px;margin-top:200px;position:initial;"><p>@Copyright InfinteWorx Omnichannel Private Limited</p></footer>
+            </div>
+
+
+
+</body>
+
+</html>
+<script src="script/Assignee.js"></script>

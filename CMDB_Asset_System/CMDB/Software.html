@@ -1,0 +1,153 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Infiniteworx</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <script src="script/jquery-1.3.2.js"></script>
+   
+    <script src="script/jquery.validate.js"></script>
+    <script src="script/Software.js"></script>
+    <link href="style1.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="main">
+        <div id="header" style="height:116px;width:1370px;">
+            <div id="logo">
+
+                <img src="../images/InfiniteworxLogo.png" style="height:101px ;width:178px" />
+            </div>
+
+
+            <div style="margin-top: -70px;    margin-left: 169px;">
+                <h1>
+                    <b>
+                        <font color="white">
+                            <center style="font-size:230%;">
+                                Assets Management System
+                            </center>
+                        </font>
+                    </b>
+                </h1>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <h1 style="    margin-left: 500px;margin-top: 30px; font-size: 150%;">Software Assets List</h1>
+    <h2 style="margin-top:16px;">
+        <input type="button" id="button" value="Add New" style="background: #EFEFEF;" onclick="location.href='SoftwareAdd.html'" />
+        <input type="button" id="button" value="Back" style="background: #EFEFEF;" onclick="location.href='Index.html'" />
+
+
+        <label style="margin-left:760px"> Search :<input type="text" id="myInput" onkeyup="funcSearch()" placeholder="Search for names.." title="Type in a name"></label>
+
+
+
+
+    </h2>
+    <h4>
+
+        <div style="overflow:scroll;height:300px;width:100%;overflow:auto">
+            <table id="tblAsset">
+                <tr class="header">
+                    <th>Sr. No</th>
+                    <th>Asset Code</th>
+                    <th>Asset Name</th>
+                    <th>Short Name</th>
+                    <th>Created Date</th>
+                    <th>Serial No</th>
+                    <th>Warrenty</th>
+                    <th>Software Version</th>
+                    <th>Software Type</th>
+                    <th>Licence Class</th>
+                    <th>Licence No</th>
+                    <th>Vendor Name</th>
+                    <th>Vendor Contact No</th>
+                    <th>Vendor Email Id</th>
+                    <th>button</th>
+                    <th>button1</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+
+                    <td>123456</td>
+                    <td>mouse</td>
+                    <td>Dell</td>
+
+                    <td>45120</td>
+                    <td>8451</td>
+                    <td>1 year</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td><input type="button" id="btnUpdate" value="Update" class="buttonStyle" style="background: #EFEFEF;" onclick="location.href='SoftwareUpdate.html'" /></td>
+                    <td><input type="button" id="btnDelete" value="Delete" class="buttonStyle" style="background: #EFEFEF;" onclick="Popup()" /></td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+
+                    <td>123456</td>
+                    <td>desktop</td>
+                    <td>Dell</td>
+
+                    <td>45120</td>
+                    <td>8451</td>
+                    <td>1 year</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td><input type="button" id="btnUpdate" value="Update" class="buttonStyle" style="background: #EFEFEF;" onclick="location.href='SoftwareUpdate.html'" /></td>
+                    <!--<td><input type="button" id="button" value="Delete" style="background: #EFEFEF;" /></td>-->
+                    <td><input type="button" id="btnDelete" value="Delete" class="buttonStyle" style="background: #EFEFEF;" onclick="Popup()" /></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+
+                    <td>123456</td>
+                    <td>desktop</td>
+                    <td>Dell</td>
+
+                    <td>45120</td>
+                    <td>8451</td>
+                    <td>1 year</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td>desktop</td>
+                    <td><input type="button" id="btnUpdate" value="Update" class="buttonStyle"  style="background: #EFEFEF;" onclick="location.href='SoftwareUpdate.html'" /></td>
+                    <!--<td><input type="button" id="button" value="Delete" style="background: #EFEFEF;" /></td>-->
+                    <td><input type="button" id="btnDelete" value="Delete" class="buttonStyle"  style="background: #EFEFEF;" onclick="Popup()" /></td>
+                </tr>
+
+            </table></div>
+        <div id="footer-wrapper">
+            <footer id="footer" style="height:70px;width:1370px;margin-top:200px;position:initial;"><p>@Copyright InfinteWorx Omnichannel Private Limited</p></footer>
+        </div>
+
+
+</body>
+
+</html>

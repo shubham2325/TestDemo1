@@ -1,0 +1,593 @@
+﻿
+
+/*<style >*/ * {
+    box-sizing: border-box;
+}
+
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    /*width: 20%;*/
+    font-size: 16px;
+    padding: 12px 20px 12px 7px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+.buttonStyle {
+    background: #EFEFEF;
+    WIDTH: 110px;
+    height: 40px;
+}
+#button {
+    background: #EFEFEF;
+    WIDTH: 110px;
+    height: 40px;
+}
+
+
+#tblAsset {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+    #tblAsset th, #tblAsset td {
+        text-align: left;
+        padding: 12px;
+    }
+
+    #tblAsset tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+        #tblAsset tr.header, #tblAsset tr:hover {
+            background-color: #f1f1f1;
+            width: 1122px;
+        }
+
+        #form {
+            align-items:center;
+        }
+
+
+#text {
+    WIDTH: 218px;
+    height: 31px;
+ border-radius:6px;
+ margin-left:40px;
+}
+
+#textName {
+    margin-left: 25px;
+}
+/* Layout */
+#container {
+    padding-left: 200px;
+    padding-right: 190px;
+}
+
+    #container .column {
+        position: relative;
+        float: left;
+    }
+
+#center {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#left {
+    width: 180px;
+    padding: 0 10px;
+    right: 240px;
+    margin-left: -100%;
+}
+
+#right {
+    width: 130px;
+    padding: 0 10px;
+    margin-right: -100%;
+}
+
+#footer {
+    clear: both;
+    width: 1122px;
+}
+
+/* IE hack */
+* html #left {
+    left: 150px;
+}
+
+/* Make the columns the same height as each other */
+#container {
+    overflow: hidden;
+}
+
+    #container .column {
+        padding-bottom: 1001em;
+        margin-bottom: -989em;
+    }
+
+/* Fix for the footer */
+* html body {
+    overflow: hidden;
+}
+
+* html #footer-wrapper {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10010px;
+    margin-bottom: -10000px;
+    background: #fff;
+}
+
+/* Aesthetics */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Sans-serif;
+    line-height: 1.5em;
+}
+
+p {
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    nav ul a {
+        color: darkgreen;
+        text-decoration: none;
+    }
+
+#header, #footer {
+    font-size: 100%;
+    padding: 0.3em;
+    background: #171914;
+    width: 1122px;
+}
+
+#left {
+    background: #e9ece0;
+}
+
+#right {
+    background: #d4e7f5;
+}
+
+#center {
+    background: #fff;
+}
+
+#container .column {
+    padding-top: 1em;
+}
+
+
+
+#logo {
+    width: 880px;
+    /*position: relative;*/
+    height: 140px;
+    background: transparent;
+}
+
+    #logo #logo_text {
+        /*position:relative;*/
+        top: 10px;
+        left: 0;
+    }
+
+    #logo h1, #logo h2 {
+        font: normal 300% 'century gothic', arial, sans-serif;
+        border-bottom: 0;
+        text-transform: none;
+        margin: 0 0 0 9px;
+    }
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover {
+    padding: 22px 0 0 0;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+    #logo_text h1 a .logo_colour {
+        color: #E4EC04;
+    }
+
+#logo_text a:hover .logo_colour {
+    color: #FFF;
+}
+
+#logo_text h2 {
+    font-size: 120%;
+    padding: 4px 0 0 0;
+    color: #999;
+}
+
+#menubar {
+    width: 368px;
+    height: 46px;
+}
+
+ul#menu {
+    /*float: right;*/
+    margin: 0;
+}
+
+    ul#menu li {
+        /*float: left;*/
+        padding: 0 0 5px 9px;
+        list-style: none;
+        margin: 1px 2px 0 0;
+        background: #5A5A5A url(tab.png) no-repeat 0 0;
+    }
+
+        ul#menu li a {
+            font: normal 100% 'trebuchet ms', sans-serif;
+            display: block;
+            float: left;
+            height: 20px;
+            padding: 6px 35px 5px 28px;
+            text-align: center;
+            color: #FFF;
+            text-decoration: none;
+            background: #3db52e url(tab.png) no-repeat 100% 0;
+        }
+
+        ul#menu li.selected a {
+            height: 20px;
+            padding: 6px 35px 5px 28px;
+        }
+
+        ul#menu li.selected {
+            margin: 1px 2px 0 0;
+            background: #00C6F0 url(tab_selected.png) no-repeat 0 0;
+        }
+
+            ul#menu li.selected a, ul#menu li.selected a:hover {
+                background: #00C6F0 url(tab_selected.png) no-repeat 100% 0;
+                color: #FFF;
+            }
+
+        ul#menu li a:hover {
+            color: #E4EC04;
+        }
+
+
+
+.bg {
+    /* The image used */
+    background-image: url("img_girl.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+/*body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 20px;
+}*/
+
+
+h1 {
+    margin: 0px 0px 10px;
+    font-size: 22px;
+}
+
+
+input {
+    border: 1px solid #888;
+    background: #ffffff;
+    padding: 3px 4px;
+    color: #222;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+}
+
+
+    input.ErrorField {
+        border: 1px solid #D00;
+        color: #D00;
+    }
+
+
+span.ValidationErrors {
+    display: inline-block;
+    font-size: 12px;
+    color: #D00;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+/*homepage*/
+/* Layout */
+body {
+    min-width: 630px;
+}
+
+#container {
+    padding-left: 200px;
+    padding-right: 190px;
+}
+
+    #container .column {
+        position: relative;
+        float: left;
+    }
+
+#center {
+    padding: -1px 20px;
+    width: 100%;
+}
+
+#left {
+    width: 180px;
+    padding: 0 10px;
+    right: 240px;
+    margin-left: -100%;
+}
+
+
+
+#footer {
+    clear: both;
+    position:fixed;
+}
+
+/* IE hack */
+* html #left {
+    left: 150px;
+}
+
+/* Make the columns the same height as each other */
+#container {
+    overflow: hidden;
+}
+
+    #container .column {
+        padding-bottom: 1001em;
+        margin-bottom: -989em;
+    }
+
+/* Fix for the footer */
+* html body {
+    overflow: hidden;
+}
+
+* html #footer-wrapper {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10010px;
+    margin-bottom: -10000px;
+    background: #fff;
+}
+
+/* Aesthetics */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Sans-serif;
+    line-height: 1.5em;
+}
+
+p {
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    nav ul a {
+        color: darkgreen;
+        text-decoration: none;
+    }
+
+#header, #footer {
+    font-size: 100%;
+    padding: 0.3em;
+    background: #69aad8;
+    position:relative;
+}
+
+#left {
+    background: #e9ece0;
+}
+
+
+
+#center {
+    background: #fff;
+}
+
+#container .column {
+    padding-top: 1em;
+}
+
+/*.button {
+    background-color: #2cc4d4;
+    border: 1px;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}*/
+
+#logo {
+    width: 880px;
+    /*position:fixed;*/
+    height: 110px;
+    background: transparent;
+}
+
+    #logo #logo_text {
+        position: relative;
+        top: 10px;
+        left: 0;
+    }
+
+    #logo h1, #logo h2 {
+        font: normal 250% 'century gothic', arial, sans-serif;
+        border-bottom: 0;
+        text-transform: none;
+        margin: 0 0 0 9px;
+    }
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover {
+    padding: 22px 0 0 0;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+    #logo_text h1 a .logo_colour {
+        color: #E4EC04;
+    }
+
+#logo_text a:hover .logo_colour {
+    color: #FFF;
+}
+
+#logo_text h2 {
+    font-size: 100%;
+    padding: 4px 0 0 0;
+    color: #999;
+}
+
+#menubar {
+    width: 880px;
+    height: 46px;
+}
+
+ul#menu {
+    /*float: right;*/
+    margin: 0;
+}
+
+    ul#menu li {
+        float: left;
+        padding: 0 0 5px 9px;
+        list-style: none;
+        margin: 1px 2px 0 0;
+        /*background: #5A5A5A url(tab.png) no-repeat 0 0;*/
+    }
+
+        ul#menu li a {
+            font: normal 100% 'trebuchet ms', sans-serif;
+            display: block;
+            float: left;
+            height: 20px;
+            padding: 6px 35px 5px 28px;
+            text-align: center;
+            color: #FFF;
+            text-decoration: none;
+            background: #5d675c;
+        }
+
+        ul#menu li.selected a {
+            height: 20px;
+            padding: 6px 35px 5px 28px;
+        }
+
+        ul#menu li.selected {
+            margin: 1px 2px 0 0;
+            background: #00C6F0 url(tab_selected.png) no-repeat 0 0;
+        }
+
+            ul#menu li.selected a, ul#menu li.selected a:hover {
+                background: #00C6F0 url(tab_selected.png) no-repeat 100% 0;
+                color: #FFF;
+            }
+
+        ul#menu li a:hover {
+            color: #E4EC04;
+        }
+
+
+.dropbtn {
+    background-color: #2cc4d4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #2cc4d4;
+    border: 1px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2cc4d4;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 186px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+.dropdown a:hover {
+    background-color: #2cc4d4;
+}
+
+.show {
+    display: block;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}

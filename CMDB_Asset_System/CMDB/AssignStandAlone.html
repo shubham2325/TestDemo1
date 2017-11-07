@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <title>Infiniteworx</title>
+        <meta name="description" content="website description" />
+        <meta name="keywords" content="website keywords, website keywords" />
+        <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+
+
+        <script src="script/jquery-1.3.2.js"></script>
+
+        <script src="script/jquery.validate.js"></script>
+       
+       
+        <link href="style1.css" rel="stylesheet" />
+
+
+    </head>
+   
+    <body>
+
+        <div id="main">
+            <div id="header" style="height:116px;width:1370px;">
+                <div id="logo">
+
+                    <img src="../images/InfiniteworxLogo.png" style="height:101px ;width:178px" />
+                </div>
+
+
+                <div style="margin-top: -108px;    margin-left: 300px;">
+                    <h1>
+                        <b>
+                            <font color="white">
+                                <center style="font-size:230%; margin-top:40px;">
+                                    Assets Management System
+                                </center>
+                            </font>
+                        </b>
+                    </h1>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+              
+                <li class=" selected" style="height:39px;"><a href="">Standalone</a></li>
+                <li style="height:39px;"><a href="AsignConfiguration.html">Configuration</a></li>
+
+            </ul>
+        </div>
+        <h2>
+            <h3 style="float:left ;margin-left:40px;">Lists of all  Assets</h3>
+            <label style="margin-left:760px"> Search :<input type="text" id="myInput" onkeyup="assigneeSearch()" placeholder="Search for short names.." title="Type in a name"></label>
+
+        </h2>
+        <h4>
+            <div style="overflow:scroll;height:300px;width:100%;overflow:auto">
+                <table id="tblAsset"style="margin-left:40px;">
+                    <tr class="header">
+                        <th></th>
+                        <th>Asset Name</th>
+                        <th>Asset Code</th>
+                        <th>Short Name</th>
+                        <th>Created Date</th>
+                        <th>Serial No</th>
+                        <th>Model No</th>
+                        <th>Warrenty</th>
+                        <th>Vendor Name</th>
+                        <th>Vendor Contact_No</th>
+                        <th>Vendor Email_Id</th>
+
+
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="default"></td>
+                        <td>1</td>
+                        <td>123456</td>
+                        <td>mouse</td>
+                        <td>Dell</td>
+
+                        <td>45120</td>
+                        <td>8451</td>
+                        <td>1 year</td>
+                        <td>desktop</td>
+                        <td>desktop</td>
+                        <td>desktop</td>
+
+
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="default"></td>
+                        <td>2</td>
+
+                        <td>123456</td>
+                        <td>dekstop</td>
+                        <td>Dell</td>
+
+                        <td>45120</td>
+                        <td>8451</td>
+                        <td>1 year</td>
+                        <td>desktop</td>
+                        <td>desktop</td>
+                        <td>desktop</td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="default"></td>
+                        <td>3</td>
+
+                        <td>123456</td>
+                        <td>dekstop</td>
+                        <td>Dell</td>
+
+                        <td>45120</td>
+                        <td>8451</td>
+                        <td>1 year</td>
+                        <td>desktop</td>
+                        <td>desktop</td>
+                        <td>desktop</td>
+
+                    </tr>
+
+                </table>
+                </div>
+               
+            <td><input type="button" id="btnAssignStandalone" value="Assign Standalone" class="buttonStyle" style="background: #EFEFEF;width:121px;margin-left:40px;margin-top: 30px;" onclick="assignAlert()" /></td>
+            <input type="button" id="btnConfigureAssets" value="Configure Assets" class="buttonStyle" style="background: #EFEFEF;width:121px;margin-left:10px;margin-top: 30px;" onclick="location.href='AsignConfiguration.html'" />
+            <input type="button" id="btnBack" value="Back" class="buttonStyle" style="background: #EFEFEF;width:121px;margin-left:10px;margin-top: 30px;" onclick="location.href='Index.html'" />
+                <input type="reset" id="btnReset" value="Reset" class="buttonStyle" style="background: #EFEFEF;width:121px;margin-left:10px;margin-top: 30px;" onclick="location.href='AssignStandAlone.html'" />
+
+                <div id="footer-wrapper">
+                    <footer id="footer" style="height:70px;width:1370px;margin-top:50px;position:initial;"><p>@Copyright InfinteWorx Omnichannel Private Limited</p></footer>
+                </div>
+
+
+</body>
+</html>
+<script src="script/Assignee.js"></script>

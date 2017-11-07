@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Infiniteworx</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  
+    <link href="style.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                
+                <img src="../images/InfiniteworxLogo.png" style="height:110px ;width:178px" />
+            </div>
+                 <div style="margin-top: -108px;    margin-left: 169px;">
+                    <h1 ><b><font color="white" ><center style="font-size:158%;">
+                           Assets Management System
+                             </center></font></b></h1>
+                </div>
+                
+               
+            </div>
+
+        </div>
+        <div style="float:left;background-color:#e2eae7;height:490px;width:184px">
+            <div class="dropdown">
+                <b><i><input type="button" style="width:182px" onclick="toggleDDl()" class="dropbtn" value="Assets Entries"></i></b> <br />
+                <div id="assetDDL" class="dropdownContent">
+
+                    <a href="Hardware.html">Hardware</a>
+                    <a href="Software.html">Software</a>
+                    <a href="Other.html">Other</a>
+                </div>
+            </div>
+            <!--<b><i><input type="button" style="width:195px" onclick="myFunction()" class="dropbtn" value="Asset Entries"></i></b> <br />-->
+            
+            <b><i><input type="button" style="width:182px" class="button" value="Assets Allocation" onclick="location.href='AssetsAllocation.html'"></i></b> <br />
+            <b><i><input type="button" style="width:182px" class="button" value="Assets List" onclick="location.href='AssetsList.html'"></i></b> <br />
+            <script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function toggleDDl() {
+                    document.getElementById("assetDDL").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function (event) {
+                    if (!event.target.matches('.dropbtn')) {
+
+                        var dropdowns = document.getElementsByClassName("dropdownContent");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
+        
+        <!--<div id="container">-->
+
+    <main id="center" class="column">
+        <center>
+           
+            <style>
+                body {
+                    background-image: url('../images/I3.jpg');
+                   
+                }
+            </style>
+            <!--<img src="../images/CMDB-Important-to-IT-Asset-Management.jpg" />-->
+
+           
+            <div>
+
+                <!--<img src="../images/AdobeStock_112975615-634x0-c-default (1).jpeg" style="width: 1126px; margin-left:198px; height: 450px; "class="hero-image" />-->
+
+            </div>
+            
+        </center>
+    </main>
+            
+
+          
+
+      
+
+        <div id="footer-wrapper">
+            <footer id="footer"><center><p>@Copyright InfinteWorx Omnichannel Private Limited</p></center></footer>
+        </div>
+
+</body>
+</html>

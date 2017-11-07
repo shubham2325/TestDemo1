@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Infinite Worx</title>
+
+   
+    <!--<script src="script/jquery.validate.js"></script>
+    <script src="script/jquery.validate.js"></script>-->
+    <script src="script/jquery.validate.js"></script>
+    <script src="script/jquery-1.3.2.js"></script>
+    <link href="style1.css" rel="stylesheet" />
+   
+</head>
+
+<body>
+    <div id="main">
+        <div id="header" style="height:116px;width:1370px;">
+            <div id="logo">
+
+                <img src="../images/InfiniteworxLogo.png" style="height:101px ;width:178px" />
+            </div>
+
+
+            <div style="margin-top: -71px;    margin-left: 169px;">
+                <h1>
+                    <b>
+                        <font color="white">
+                            <center style="font-size:230%;">
+                                Assets Management System
+                            </center>
+                        </font>
+                    </b>
+                </h1>
+            </div>
+        </div>
+
+
+    </div>
+
+      
+    
+
+    <form id="frmHardwareUpdate" name="frmHardwareUpdate" onsubmit="return checkforblank()">
+
+
+
+
+        <div style="width:50%;float:left">
+            <br />
+            <h4 id="textName" style="margin-left:200px;">
+                Asset Code:
+                <input type="text" id='assetCode'  value=""name="assetCode" style=" margin-left:25px; "><br><br>
+
+                Asset Name:
+                <input type="text" id="assetName" name="assetName" style=" margin-left:24px; "><br><br>
+
+                Short Name:
+                <input type="text" id="shortName" name="shortName" style="margin-left:28px" ;><br><br>
+
+
+                Description:
+                <textarea rows="4" id="description" cols="22" name="description" placeholder="Type text here" style=" margin-left:28px; border-radius:10px; "></textarea>
+                <br>
+                <br />
+
+                Created date:
+                <input type="date" id="createdDate" name="createdDate" style=" margin-left:23px;"><br><br>
+
+
+            </h4>
+        </div>
+        <div style="width:50%;float:right" ;style="margin-left:62px">
+            <br />
+            <h4>
+                Serial No:
+                <input type="text" id="serialNo" name="serialNo" placeholder="Serial No/Service Tag" style=" margin-left:80px;  width: 181px; height: 22px;"  /><br><br>
+
+                Warranty Period:
+                <input type="text" id="warrantyPeriod" name="warrantyPeriod" placeholder="in months.." style="margin-left:28px"><br><br>
+
+                Model No:
+                <input type="text" id="modelNo" name="modelNo" style="margin-left:74px"><br><br>
+
+                Vendor Name:
+                <input type="text" id="vendorName" name="vendorName" style="margin-left:46px"><br><br>
+
+                Vendor Contact:
+                <input type="text" id="vendorContactNo" name="vendorContactNo" style=" margin-left:32px; width: 181px; height: 22px;"><br><br>
+
+                Vendor Email:
+                <input type="email" id="vendorEmail" name="vendorEmail" style=" margin-left:46px; width: 181px; height: 22px;"><br>
+        </div>
+
+
+        <br />
+        <div style="margin-top:15%">
+            <input type="submit" id="btnSubmit" class="buttonStyle" value="Update" style="margin-left:-98px;padding: 4px 12px;margin-top:60px">
+            <input type="button" id="btnBack" class="buttonStyle" value="Back" style="margin-left:34px;padding: 2px 10px;" onclick="location.href='Hardware.html'">
+            <input type="reset" id="btnCancel" class="buttonStyle" value="Reset" style="margin-left:50px;padding: 4px 12px;">
+        </div>
+        </h4>
+    </form>
+
+    <div id="footer-wrapper">
+        <footer id="footer" style="height:70px;width:1370px;margin-top:30px;position:initial;"><p>@Copyright InfinteWorx Omnichannel Private Limited</p></footer>
+    </div>
+
+</body>
+</html>
+                       
+<script src="script/Hardware.js"></script>
